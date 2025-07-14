@@ -1,24 +1,25 @@
 /* === PAGE BACKGROUND AND TEXT STYLE === */
 body {
     font-family: 'Trebuchet MS', Arial, sans-serif; /* 💡 Change the font family for the entire page */
-    background-color: #bfbfbf; /* 🎨 You can change the entire page background color here */
+    background: linear-gradient(135deg, #A8DEE0, #F9E2AE);
+    /* background-color: #8266b0; 🎨 You can change the entire page background color here */
 }
 
 /* === PARAGRAPH STYLE === */
 p {
-    color: #1a1a1a; /* 🎨 Bio and fun fact text color */
+    color: #63BCC9; /* 🎨 Bio and fun fact text color */
     text-align: center; /* 💡 Like "text center" in Google Docs/Word */
 }
 
 /* === LINK STYLES === */
 a {
     text-decoration: none;
-    color: #404040; /* 💡 All links will appear blue by default */
+    color: #63BCC9; /* 💡 All links will appear blue by default */
 }
 
 a:-webkit-any-link {
     text-decoration: none;
-    color: #404040; /* IMPORTANT: make this the same as above! ^^^ */
+    color: #63BCC9; /* IMPORTANT: make this the same as above! ^^^ */
 }
 
 /* === MAIN CONTAINER BOX (THE CARD) === */
@@ -27,50 +28,51 @@ a:-webkit-any-link {
     background-color: #f2f2f2; /* 🎨 Card background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 🎨 Adds a soft shadow */
     border-radius: 10px; /* 💡 Rounded corners */
-    margin: 15px auto;
+    margin: 15px auto 15px auto;
     padding: 25px;
 }
 
 /* === "HI, MY NAME IS" HEADING === */
 #name-intro {
-    font-family: 'Courier New', Courier, monospace; /* 💡 Change the font family for the intro text */
-    color: #333333; /* 🎨 Intro text color */
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* 💡 Change the font family for the intro text */
+    color: #63BCC9; /* 🎨 Intro text color */
     margin-bottom: 15px;
 }
 
 /* === PROFILE PICTURE STYLE === */
 #profile-pic {
     width: 90%; /* 💡 Resize profile picture here */
-    border-radius: 10px; /* 💡 Rounds the corners of the profile picture */
+    border-radius: 1000px; /* 💡 Rounds the corners of the profile picture */
     margin-bottom: 15px;
+    box-shadow: 0 0 5px;
 }
 
 /* === YOUR NAME (BIG TEXT) === */
 #name {
     font-size: 64px; /* 💡 Change this to make your name bigger/smaller */
-    color: #1a1a1a; /* 🎨 Name text color */
+    color: #63BCC9; /* 🎨 Name text color */
     margin-bottom: 15px;
 }
 
 /* === HOMETOWN TEXT === */
 #hometown {
-    color: #4d4d4d; /* 🎨 Hometown text color */
+    color: #63BCC9; /* 🎨 Hometown text color */
     margin-bottom: 10px;
 }
 
 /* === EMAIL SECTION === */
 #email {
-    color: #1a1a1a;
+    color: #63BCC9;
     margin-bottom: 15px;
 }
 
 #email-link { /* The link to your email */
-    color: #1a1a1a; /* 🎨 Change the color of the email link */
+    color: #63BCC9; /* 🎨 Change the color of the email link */
     text-decoration: underline; 
 }
 
 #email-link:hover { /* Change the color of the link when you put your mouse over it */
-    color: #4d4d4d; /* 🎨 Change the hover color of the email link */
+    color: #91dce8; /* 🎨 Change the hover color of the email link */
 }
 
 /* === BIO SECTION === */
@@ -82,6 +84,7 @@ a:-webkit-any-link {
 #fun-fact {
     font-size: 15px; /* 💡 Change the size of the fun fact text */
     margin: 10px;
+    color: #ff9d00
 }
 
 /* === BACKGROUND IMAGE STYLE === */
@@ -89,8 +92,103 @@ a:-webkit-any-link {
     background-image: url("[PUT A URL HERE !!!]");
 }
 
+#floating-oranges {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
 
+.orange {
+    width: 40px;
+    height: 40px;
+    background-image: url("icons8-orange-100.png"); /* your local image */
+    background-size: cover;
+    position: absolute;
+    top: 100%;
+    animation: floatUp linear infinite;
+    opacity: 0.85;
+}
 
+.orange:nth-child(1) { 
+    left: 5%; 
+    animation-duration: 11s; 
+}
+.orange:nth-child(2) { 
+    left: 15%; 
+    animation-duration: 13s; 
+}
+.orange:nth-child(3) { 
+    left: 30%; 
+    animation-duration: 10s; 
+}
+.orange:nth-child(4) { 
+    left: 70%; 
+    animation-duration: 12s; 
+}
+.orange:nth-child(5) { 
+    left: 80%; 
+    animation-duration: 11s; 
+}
+.orange:nth-child(6) { 
+    left: 95%; 
+    animation-duration: 13s; 
+}
+
+.orange:nth-child(7) {
+    left: 5%;
+    animation-duration: 11s; 
+    animation-delay: 5s;
+}
+.orange:nth-child(8) { 
+    left: 15%; 
+    animation-duration: 13s; 
+    animation-delay: 5s;
+}
+.orange:nth-child(9) { 
+    left: 30%; 
+    animation-duration: 10s;
+    animation-delay: 5s; 
+}
+.orange:nth-child(10) { 
+    left: 70%; 
+    animation-duration: 12s; 
+    animation-delay: 5s;
+}
+.orange:nth-child(11) { 
+    left: 80%; 
+    animation-duration: 11s; 
+    animation-delay: 5s;
+}
+.orange:nth-child(12) { 
+    left: 95%; 
+    animation-duration: 13s;
+    animation-delay: 5s; 
+}
+
+@keyframes floatUp {
+    0% {
+        top: 100%;
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        top: -10%;
+        transform: translateY(-100vh) rotate(360deg);
+    }
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 
@@ -198,5 +296,5 @@ h1, h2, h3 {
     z-index: -1; /* Makes sure background stays behind everything else */
     background-size: cover; /* Makes sure image covers the whole background */
     background-position: center;
-    background-color: #acacac; /* Fallback color */
+    /*background-color: #acacac; /* Fallback color */
 }
